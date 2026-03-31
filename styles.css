@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #1F2937;
+    --secondary-color: #3882F6;
+    --gray: #E5E7EB;
+    --white: #F9FAF8;
+
+    --font-family: Roboto, sans-serif;
+
+    --hero-font-size: 48px;
+    --hero-secondary-font-size: 18px;
+    --hero-logo-font-size: 24px;
+    --information-header-font-size: 36px;
+    --quote-font-size: 36px;
+
+    --bold: 900;
+    --light: 300;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    padding: 1rem 12rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 12rem;
+    color: var(--white);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.cta h1 {
+    font-size: var(--hero-font-size);
+}
+
+.cta p {
+    font-size: var(--hero-secondary-font-size);
+    color: var(--gray);
+}
+
+.cta button {
+    width: fit-content;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.hero img {
+    width: 40%;
+    height: 24rem;
+}
