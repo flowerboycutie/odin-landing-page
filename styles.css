@@ -8,6 +8,7 @@
     --primary-color: #1F2937;
     --secondary-color: #3882F6;
     --gray: #808080;
+    --light-gray: #E5E7EB;
     --white: #F9FAF8;
 
     --font-family: Roboto, sans-serif;
@@ -122,9 +123,29 @@ section {
     border: 2px solid var(--secondary-color);
     border-radius: 0.5rem;
     height: 200px;
-    width: 200px;
+    width: 100%;
 }
 
 .card p {
     color: var(--gray);
+    text-align: center;
+}
+
+.quote {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.quote h1 {
+    color: var(--primary-color);
+    font-size: var(--quote-font-size);
+    font-weight: var(--light);
+    font-style: italic;
+}
+
+.quote span {
+    text-align: right;
+    font-size: var(--hero-logo-font-size);
+    font-weight: var(--bold);
 }
